@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&family=Caveat&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css"></head>
+
+<body>
+    <header>Computer Components Order Form</header><br>
+    <section class="container">
+       <div class="inner">
+        <div class="name">
+            <div class="delivery">
+                <form>
+                    <h2>Delivery Information</h2>
+                    <div>
+                        <label for="name"  class="name">Name</label>
+                        <input type="text" id="name" class="bars" name="name" placeholder="George Anastasiou">
+                    </div>
+                    <div>
+                        <label for="address" class="name">Address</label>
+                        <input type="text" id="address" class="bars" name="address">
+                    </div>
+                    <div>
+                        <label for="city"  class="name">City</label>
+                        <input type="text" id="city" class="bars" name="city" placeholder="Berlin">
+                    </div>
+                    <div>
+                        <label for="postal" class="name">Postal Code</label>
+                        <input type="text" id="postal" class="bars" name="postal-code">
+                    </div>
+                    <div>
+                        <label for="email" class="name">Email</label>
+                        <input type="text" id="email" name="email" class="bars" placeholder="example@gmail.com">
+                    </div>
+                    <div>
+                        <label for="phone" class="name">Phone</label>
+                        <input type="tel" id="phone" class="bars" name="phone" placeholder="+306984786860">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="info">
+            <form >
+                <h2>Order</h2><br>
+                <label for="mouse" class="flex">Mouse</label>
+                <select name="mouse" id="mouse">
+                    <option value="0">Select</option>
+                    <option value="1">Razer</option>
+                    <option value="2">Corsair</option>
+                    <option value="3">Logitech</option>
+                </select>
+                <span class="minus">-</span>
+                <span type="text" value="0" id="minus" class="num">0</span>
+                <span class="plus">+</span>
+                
+
+                <label for="keyboard" class="flex">Keyboard</label>
+                <select name="keyboard" id="keyboard">
+                    <option value="0">Select</option>
+                    <option value="1">Razer</option>
+                    <option value="2">Corsair</option>
+                    <option value="3">Logitech</option>
+                </select>
+                <span class="minus" >-</span>
+                <span type="text" value="0" id="plin" class="num">0</span>
+                <span class="plus">+</span>
+               
+                <label for="monitor" class="flex">Monitor</label>
+                <select name="monitor" id="monitor">
+                    <option value="0">Select</option>
+                    <option value="1">Razer</option>
+                    <option value="2">Corsair</option>
+                    <option value="3">Logitech</option>
+                </select>
+                <span class="minus">-</span>
+                <span type="text" value="0" id="mion" class="num">0</span>
+                <span class="plus">+</span>
+                <label for="instructions" class="yo">Special Instructions</label>
+                <textarea id="instructions" name="instructions" rows="3" cols="50" placeholder="special requests, delivery details"></textarea>            </form>
+        </div>
+        <fieldset id="previewbutton">
+            <input type="button" id="previewBtn" value="Preview Order" />
+         </fieldset>
+    </div>
+    <section>
+        <div class="summary">
+            <h2 class="order">Order Summary</h2><br>
+            <h3>Delivery To</h3><br>
+            <div id="deliverTo"></div><br>
+            <h3>Order</h3><br>
+            <div id="order"></div><br>
+            <h3 >Instructions</h3><br>
+            <div id="instruction"></div>
+        </div>
+    </section>
+    </div>  
+    <script src="script.js"></script>
+
+</body>
+
+</html>
